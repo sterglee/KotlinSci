@@ -4,7 +4,7 @@
 ## Installation and Running
 
 
-1. Download and unzip the executable
+1. Download and unzip 
 
 
 2. Execute the KotlinSci.sh script
