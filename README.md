@@ -1,16 +1,13 @@
 # KotlinSci
 
 
-To execute KotlinSci type:
-
-./bin/ki.sh
+## Installation and Running
 
 
-To load the main KotlinLab.jar library type:
-:dependsOn kotlinLab.jar
+1. Download and unzip the executable
 
-To provide the high-level MATLAB like syntactic constructs type:
-:load kotlinSci.kt
+
+2. Execute the KotlinSci.sh script
 
 
 Then you can use code as:
