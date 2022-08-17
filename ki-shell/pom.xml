@@ -103,7 +103,6 @@
 
   <build>
     <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
     <resources>
       <resource>
         <directory>${project.basedir}/src/main/resources</directory>
@@ -133,13 +132,7 @@
               </sourceDirs>
             </configuration>
           </execution>
-          <execution>
-            <id>test-compile</id>
-            <goals>
-              <goal>test-compile</goal>
-            </goals>
-            <phase>test-compile</phase>
-          </execution>
+
         </executions>
       </plugin>
       <plugin>
@@ -159,10 +152,7 @@
             <phase>none</phase>
           </execution>
           <!-- Replacing default-testCompile as it is treated specially by maven -->
-          <execution>
-            <id>default-testCompile</id>
-            <phase>none</phase>
-          </execution>
+
           <execution>
             <id>java-compile</id>
             <goals>
@@ -170,14 +160,7 @@
             </goals>
             <phase>compile</phase>
           </execution>
-          <execution>
-            <id>java-test-compile</id>
-            <goals>
-              <goal>testCompile</goal>
-            </goals>
-            <phase>test-compile</phase>
-          </execution>
-        </executions>
+          </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

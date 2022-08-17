@@ -1,0 +1,32 @@
+#Saved kotlinLab global conf parameters
+#Wed Aug 17 14:11:56 EEST 2022
+MatDigitsProp=4
+VecDigitsProp=4
+buiFontNameProp=Times New Roman
+buiFontSizeProp=14
+gLabWorkingDirProp=/Users/sterg/kotlinapps/kotlin-interactive-shell-main/bin
+guiFontNameProp=Times New Roman
+guiFontSizeProp=14
+heightProp=715
+htmlFontNameProp=Default
+htmlFontSizeProp=16
+mulMultithreadingLimitProp=-1
+mxColsProp=6
+mxRowsProp=6
+outConsFontNameProp=Lucida Grande
+outConsFontSizeProp=13
+paneFontNameProp=Times New Roman
+paneFontSizeProp=16
+puiFontNameProp=Times New Roman
+puiFontSizeProp=14
+rheightProp=1114
+rwidthProp=1260
+rxlocProp=984
+rylocProp=132
+uiFontNameProp=Times New Roman
+uiFontSizeProp=14
+useAlwaysDefaultImportsProp=true
+verboseOutputProp=true
+widthProp=1207
+xlocProp=0
+ylocProp=0

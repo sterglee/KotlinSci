@@ -200,6 +200,22 @@ open class Shell(val replConfiguration: ReplConfiguration,
             }
         }
 
+        println("eval kotlinLab dependencies before")
+        evalSnippet("@file:DependsOn(\"kotlinLab.jar\")")
+        println("eval kotlinLab dependencies after")
+
+        println("eval kotlinLab imports before")
+
+        val content = File("kotlinSci.kt").readText()
+        println(content)
+       // Command.Result.RunSnippets(listOf(content))
+      evalSnippet(content)
+        println("eval kotlinLab imports after")
+
+        evalSnippet("kotlinLabExec.kotlinLab.kotlinLab(\"\")")
+
+
+
         do {
             try {
                 val line = reader.readLine(prompt())

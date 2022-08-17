@@ -21,8 +21,7 @@ if [[ "$_JAVA" ]]; then
     if [[ "$JAVA_OPTS" ]]; then
       JAVA_OPTS="$JAVA_OPTS $ADD_OPENS"
     else
-      JAVA_OPTS=$ADD_OPENS
-    fi
+      JAVA_OPTS=$ADD_OPENS     fi
   fi
 fi
 
@@ -38,4 +37,4 @@ command -v realpath &>/dev/null || realpath() {
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 KI_SHELL=$SCRIPT_DIR/../lib/ki-shell.jar
 
-$_JAVA $JAVA_OPTS -jar "${KI_SHELL}" $@
+$_JAVA --add-modules=jdk.incubator.vector $JAVA_OPTS -jar "${KI_SHELL}" $@
