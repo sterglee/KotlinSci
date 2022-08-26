@@ -15,6 +15,12 @@ Then you can use code as:
 plot(vrand(8000))
 
 
+You type code in the embedded Kotlin Interactive Shell,
+since KotlinSci prepares it automatically by extending its classpath and performing
+the necessary import statements.
+
+Some code examples follow.
+
 
 # Examples
 
