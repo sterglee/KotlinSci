@@ -9,10 +9,10 @@
 
 2. Execute the KotlinSci.sh script
 
-
-Then you can use code as:
-
-plot(vrand(8000))
+Then the Kotlin Interactive Shell is started, and it performs automatically some operations in order to initialize 
+the KotlinSci environment.
+Also, the KotlinLab graphical environment is displayed,
+it is useful, but currently code can be executed only with the Kotlin Interactive Shell.
 
 
 You type code in the embedded Kotlin Interactive Shell,
