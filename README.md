@@ -20,7 +20,7 @@ plot(vrand(8000))
 
 ## Chaotic map
 
-
+```
 import kotlin.math.sin as sin
 import kotlin.math.cos as cos
 
@@ -52,6 +52,6 @@ scatterPlotsOn()
 figure(1)
 plot(xall, yall, "time = "+tm)
 
-
+```
 
 
