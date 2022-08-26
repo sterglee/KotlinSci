@@ -18,7 +18,7 @@ plot(vrand(8000))
 
 # Examples
 
-## Chaotic map
+## Ikeda Chaotic map
 
 ```
 import kotlin.math.sin as sin
@@ -146,4 +146,28 @@ jplot(t2, x4*8.77+x3)
 jtitle("x4*8.77+x3")
 jlineColor(1, Color.BLUE)
 ```
+
+
+
+## Interpolation using Apache Common Math
+
+```
+import org.apache.commons.math3.analysis.interpolation.*
+var x = doubleArrayOf( 0.0, 0.5, 1.0, 1.6,  2.0)
+var y = doubleArrayOf( 1.0, 0.7, -1.0, -1.6, 2.0)
+
+var interpolator = SplineInterpolator()
+var function  = interpolator.interpolate(x, y)
+fun interpf (x: Double) = function.value(x)  // the constructed function from spline interpolation
+
+
+var fig = figure(1)
+var N = 1000
+var taxis = linspace(0.0, 2.0, N)
+var interpValues = taxis.map(::interpf)  // constructs a plot of the constructed function with spline interpolation
+plot( taxis, interpValues, java.awt.Color.GREEN, "Interpolated Curve")
+plotMarks(x!!,  y!!)
+title( "Demonstration of the Apache Common Maths interpolation")
+```
+
 
